@@ -16,6 +16,9 @@ const skillColor = "navy";
 const fontWeight = "bold";
 const textCase = "uppercase";
 import '../styles/global.css';
+
+import Footer from '../components/Footer.astro';
+import Header from '../components/Header.astro';
 ---
 
 <html lang="en">
@@ -40,9 +43,7 @@ import '../styles/global.css';
   </head>
 
   <body>
-    <a href="/">Home</a>
-    <a href="/about/">About</a>
-    <a href="/blog/">Blogs</a>
+    <Header />
 
     <h1>{pageTitle}</h1>
     <h2>... and my new Astro site!</h2>
@@ -88,5 +89,6 @@ import '../styles/global.css';
       This site will update as I complete more of the tutorial, so keep checking
       back and see how my journey is going!
     </p>
+    <Footer />
   </body>
 </html>
